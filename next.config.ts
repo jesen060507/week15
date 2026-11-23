@@ -1,9 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  experimental: {
-    agentFeedback: true,
+  outputFileTracingIncludes: {
+    "/api/users": ["./dev.db"],
+    "/api/register": ["./dev.db"],
   },
 };
 
